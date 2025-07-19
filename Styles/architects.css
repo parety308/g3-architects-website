@@ -33,7 +33,6 @@
 }
 /* Heading Style */
 .header{
-     border:2px solid;
     padding: 20px;
     padding-bottom: 0;
 }
@@ -79,7 +78,7 @@
    
 /* Feature Sytle wiht responsive query */
 .feature{
-    border:2px solid;
+   
     align-items: center;
     margin:0 auto;
       gap:120px;
@@ -107,7 +106,6 @@
 /* Card Style */
 
 .facts{
-border: 1px solid;
  padding:20px;
   margin-top: 130px;
     
@@ -141,12 +139,12 @@ border: 1px solid;
     }
  .sponsor{
     margin-top: 130px;
-    border: 1px solid;
  }
     .logo{
          margin-top: 130px;
          display: grid;
          grid-template-columns: repeat(5,1fr);
+         padding: 20px;
     }
     .sponsor-title{
         font-size: 2.6rem;
@@ -154,26 +152,44 @@ border: 1px solid;
     .sponsor-text{
         text-align: center;
     }
-
+    /* About Style */
+.about-content{
+    margin-top: 130px;
+  padding: 20px;
+  gap:50px;
+}
+.about-title{
+    font-size: 4rem;
+}
+.about-des{
+    padding: 10px;
+    width: 540px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,.1);
+}
+#ex-badge{
+    font-size: 4rem;
+    width:400px;
+    margin-top:-120px ;
+    margin-left: -60px;
+    text-align: center;
+}
 
 /* Media query responsive */
 @media screen and (max-width:576px) {
-    .navbar,
-    .nav-links,
-    .feature{
-        flex-direction: column;
-    }
-    .feature-image{
-        grid-template-columns: repeat(1,1fr);
-        
-    }
     .image{
         width:100%;
       
     }
-    .card,.logo{
+    .card,.logo,.about-content,.about-des,.navbar,
+.nav-links,
+.feature,.feature-image {
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        margin-left: 50px;
+    }
+    .about-des,.about-title,.intro{
+        width:100%;
     }
 }
